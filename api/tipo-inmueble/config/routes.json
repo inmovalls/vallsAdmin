@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipo-inmuebles",
+      "handler": "tipo-inmueble.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-inmuebles/count",
+      "handler": "tipo-inmueble.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-inmuebles/:id",
+      "handler": "tipo-inmueble.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipo-inmuebles",
+      "handler": "tipo-inmueble.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipo-inmuebles/:id",
+      "handler": "tipo-inmueble.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipo-inmuebles/:id",
+      "handler": "tipo-inmueble.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

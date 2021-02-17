@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zonas",
+  "info": {
+    "name": "Zona"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre_zona": {
+      "type": "string",
+      "required": true
+    },
+    "zon_lang1": {
+      "type": "string"
+    },
+    "zon_lang2": {
+      "type": "string"
+    },
+    "zon_lang3": {
+      "type": "string"
+    },
+    "zon_lang4": {
+      "type": "string"
+    },
+    "zon_lang5": {
+      "type": "string"
+    },
+    "inmuebles": {
+      "via": "zona",
+      "collection": "inmuebles"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subtipo_inmuebles",
+  "info": {
+    "name": "Subtipo_inmueble"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre_subtipo_inmueble": {
+      "type": "string",
+      "required": true
+    },
+    "stip_lang1": {
+      "type": "string"
+    },
+    "stip_lang2": {
+      "type": "string"
+    },
+    "stip_lang3": {
+      "type": "string"
+    },
+    "stip_lang4": {
+      "type": "string"
+    },
+    "stip_lang5": {
+      "type": "string"
+    },
+    "inmuebles": {
+      "via": "subtipo_inmueble",
+      "collection": "inmuebles"
+    }
+  }
+}

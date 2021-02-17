@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operacions",
+  "info": {
+    "name": "Operacion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tipo_operacion": {
+      "type": "string",
+      "required": true
+    },
+    "o_lang1": {
+      "type": "string"
+    },
+    "o_lang2": {
+      "type": "string"
+    },
+    "o_lang3": {
+      "type": "string"
+    },
+    "o_lang4": {
+      "type": "string"
+    },
+    "o_lang5": {
+      "type": "string"
+    },
+    "inmuebles": {
+      "via": "operacion",
+      "collection": "inmuebles"
+    }
+  }
+}

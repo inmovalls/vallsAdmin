@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departamentos",
+  "info": {
+    "name": "Departamento",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre_departamente": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "telefono2": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "email2": {
+      "type": "email"
+    },
+    "url_imagen_fondo": {
+      "type": "string"
+    },
+    "url_imagen_principal": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "nom_lang1": {
+      "type": "string"
+    },
+    "tit_lang1": {
+      "type": "string"
+    },
+    "des_lang1": {
+      "type": "text"
+    },
+    "nom_lang2": {
+      "type": "string"
+    },
+    "tit_lang2": {
+      "type": "string"
+    },
+    "des_lang2": {
+      "type": "text"
+    },
+    "nom_lang3": {
+      "type": "string"
+    },
+    "tit_lang3": {
+      "type": "string"
+    },
+    "des_lang3": {
+      "type": "text"
+    },
+    "nom_lang4": {
+      "type": "string"
+    },
+    "tit_lang4": {
+      "type": "string"
+    },
+    "des_lang4": {
+      "type": "text"
+    },
+    "nom_lang5": {
+      "type": "string"
+    },
+    "tit_lang5": {
+      "type": "string"
+    },
+    "des_lang5": {
+      "type": "text"
+    },
+    "extra": {
+      "type": "string"
+    },
+    "extra2": {
+      "type": "text"
+    }
+  }
+}

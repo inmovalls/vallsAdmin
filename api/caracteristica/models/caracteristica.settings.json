@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "caracteristicas",
+  "info": {
+    "name": "Caracteristica"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre_caracteristica": {
+      "type": "string",
+      "required": true
+    },
+    "car_lang1": {
+      "type": "string"
+    },
+    "car_lang2": {
+      "type": "string"
+    },
+    "car_lang3": {
+      "type": "string"
+    },
+    "car_lang4": {
+      "type": "string"
+    },
+    "car_lang5": {
+      "type": "string"
+    },
+    "inmuebles": {
+      "via": "caracteristicas",
+      "collection": "inmuebles"
+    }
+  }
+}

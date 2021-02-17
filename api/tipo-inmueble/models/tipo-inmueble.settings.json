@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_inmuebles",
+  "info": {
+    "name": "Tipo_Inmueble"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre_tipo_inmueble": {
+      "type": "string",
+      "required": true
+    },
+    "tip_lang1": {
+      "type": "string"
+    },
+    "tip_lang2": {
+      "type": "string"
+    },
+    "tip_lang3": {
+      "type": "string"
+    },
+    "tip_lang4": {
+      "type": "string"
+    },
+    "tip_lang5": {
+      "type": "string"
+    },
+    "inmuebles": {
+      "via": "tipo_inmueble",
+      "collection": "inmuebles"
+    }
+  }
+}

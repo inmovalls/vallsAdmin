@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/subtipo-inmuebles",
+      "handler": "subtipo-inmueble.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subtipo-inmuebles/count",
+      "handler": "subtipo-inmueble.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subtipo-inmuebles/:id",
+      "handler": "subtipo-inmueble.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subtipo-inmuebles",
+      "handler": "subtipo-inmueble.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subtipo-inmuebles/:id",
+      "handler": "subtipo-inmueble.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subtipo-inmuebles/:id",
+      "handler": "subtipo-inmueble.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

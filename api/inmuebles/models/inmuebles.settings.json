@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inmuebles",
+  "info": {
+    "name": "Inmuebles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "referencia": {
+      "type": "uid",
+      "required": true
+    },
+    "disponible": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "fecha_publicacion": {
+      "type": "date"
+    },
+    "precio": {
+      "required": true,
+      "type": "integer"
+    },
+    "superficie": {
+      "type": "integer",
+      "required": true
+    },
+    "habitaciones": {
+      "type": "integer",
+      "required": true
+    },
+    "banos": {
+      "type": "integer",
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "imagenes_url": {
+      "type": "text",
+      "required": true
+    },
+    "mapa_url": {
+      "type": "text",
+      "required": true
+    },
+    "operacion": {
+      "model": "operacion",
+      "via": "inmuebles"
+    },
+    "tipo_inmueble": {
+      "model": "tipo-inmueble",
+      "via": "inmuebles"
+    },
+    "subtipo_inmueble": {
+      "model": "subtipo-inmueble",
+      "via": "inmuebles"
+    },
+    "zona": {
+      "model": "zona",
+      "via": "inmuebles"
+    },
+    "subzona": {
+      "model": "subzona",
+      "via": "inmuebles"
+    },
+    "caracteristicas": {
+      "collection": "caracteristica",
+      "via": "inmuebles",
+      "dominant": true
+    },
+    "barrio": {
+      "type": "string"
+    },
+    "t_lang1": {
+      "type": "string"
+    },
+    "d_lang1": {
+      "type": "text"
+    },
+    "t_lang2": {
+      "type": "string"
+    },
+    "d_lang2": {
+      "type": "text"
+    },
+    "t_lang3": {
+      "type": "string"
+    },
+    "d_lang3": {
+      "type": "text"
+    },
+    "t_lang4": {
+      "type": "string"
+    },
+    "d_lang4": {
+      "type": "text"
+    },
+    "t_lang5": {
+      "type": "string"
+    },
+    "d_lang5": {
+      "type": "text"
+    }
+  }
+}

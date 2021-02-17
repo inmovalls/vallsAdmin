@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inmuebles",
+      "handler": "inmuebles.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inmuebles/count",
+      "handler": "inmuebles.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inmuebles/:id",
+      "handler": "inmuebles.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inmuebles",
+      "handler": "inmuebles.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inmuebles/:id",
+      "handler": "inmuebles.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inmuebles/:id",
+      "handler": "inmuebles.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

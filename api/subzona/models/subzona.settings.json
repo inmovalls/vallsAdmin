@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subzonas",
+  "info": {
+    "name": "Subzona"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre_subzona": {
+      "type": "string",
+      "required": true
+    },
+    "szon_lang1": {
+      "type": "string"
+    },
+    "szon_lang2": {
+      "type": "string"
+    },
+    "szon_lang3": {
+      "type": "string"
+    },
+    "szon_lang4": {
+      "type": "string"
+    },
+    "szon_lang5": {
+      "type": "string"
+    },
+    "inmuebles": {
+      "via": "subzona",
+      "collection": "inmuebles"
+    }
+  }
+}
